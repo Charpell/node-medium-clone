@@ -12,3 +12,8 @@
 - add mongoose, body-parser, morgan, compression, helmet
 - setup config folder
 - setup constants
+
+
+### Part 3, Users creation
+- create the user model, controller and routes
+- add joi for validation with express-validation
