@@ -1,6 +1,14 @@
-Part 1, Setup off the tools
+### Part 1, Setup off the tools
 - editorconfig
 - express
 - eslint
 - babel
 - webpack 2
+
+
+
+
+### Part 2, Setup the middlewares and mongodb
+- add mongoose, body-parser, morgan, compression, helmet
+- setup config folder
+- setup constants
