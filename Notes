@@ -17,3 +17,10 @@
 ### Part 3, Users creation
 - create the user model, controller and routes
 - add joi for validation with express-validation
+
+
+### Part 4, Add bcrypt and passport
+- add rimraf and clean dist on webpack build
+- crypt the user password
+- create the localStrategy with passport
+- can log a user
