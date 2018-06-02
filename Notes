@@ -62,6 +62,12 @@
 - show the authorization work
 
 
-### Part 11, User can favourite a post if auth + increment the favoriteCount
+### Part 11, User can favorite a post if auth + increment the favoriteCount
 - create model methods for both user and post
 - add the increment/decrement statics on post
+
+
+### Part 12, Send if favorite or not with post for help the life of the front end
+- make route auth
+- make post method
+- make post controller work with the favorite
