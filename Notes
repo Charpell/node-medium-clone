@@ -56,3 +56,7 @@
 - create the route and controller
 - create a validation field
 
+
+### Part 10, Delete a post if author of it
+- create the route and controller
+- show the authorization work
