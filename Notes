@@ -43,4 +43,10 @@
 - create the controller, route
 - add http-status library
 - populate user
-- user toAuthJSON vs toJSON 
+- user toAuthJSON vs toJSON
+
+
+### Part 8, Gell all post with a list statics method
+- talk about the repos
+- create the controller
+- create a list statics method on post

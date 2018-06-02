@@ -68,6 +68,13 @@ PostSchema.statics = {
       user,
     });
   },
+  list({ skip = 1, limit = 5 } = {}) {
+    return this.find()
+      .sort({ createdAt: -1 })
+      .skip(skip)
+      .limit(limit)
+      .populate('user');
+  }
 };
 
 
