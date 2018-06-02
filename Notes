@@ -37,3 +37,10 @@
 - create the post model
 - add the user id as the author
 - resolve error with joi
+
+
+### Part 7, Get a post by his id and get all of them
+- create the controller, route
+- add http-status library
+- populate user
+- user toAuthJSON vs toJSON 
