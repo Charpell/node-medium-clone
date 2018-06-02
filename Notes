@@ -60,3 +60,8 @@
 ### Part 10, Delete a post if author of it
 - create the route and controller
 - show the authorization work
+
+
+### Part 11, User can favourite a post if auth + increment the favoriteCount
+- create model methods for both user and post
+- add the increment/decrement statics on post

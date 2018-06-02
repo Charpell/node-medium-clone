@@ -25,7 +25,7 @@ const PostSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: 'User',
   },
-  favoriteColor: {
+  favoriteCount: {
     type: Number,
     default: 0,
   },
@@ -74,7 +74,13 @@ PostSchema.statics = {
       .skip(skip)
       .limit(limit)
       .populate('user');
-  }
+  },
+  incFavoriteCount(postId) {
+    return this.findByIdAndUpdate(postId, { $inc: { favoriteCount: 1 } });
+  },
+  decFavoriteCount(postId) {
+    return this.findByIdAndUpdate(postId, { $inc: { favoriteCount: -1 } });
+  },
 };
 
 

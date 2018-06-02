@@ -4,7 +4,7 @@ import { hashSync, compareSync } from 'bcrypt-nodejs';
 import jwt from 'jsonwebtoken';
 import uniqueValidator from 'mongoose-unique-validator';
 
-
+import Post from '../post/post.model';
 import { passwordReg } from './user.validation';
 import constants from '../../config/constants';
 
@@ -49,6 +49,12 @@ const UserSchema = new Schema({
       message: '{VALUE} is not a valid password',
     },
   },
+  favorites: {
+    posts: [{
+      type: Schema.Types.ObjectId,
+      ref: 'Post',
+    }],
+  },
 }, { timestamps: true });
 
 UserSchema.plugin(uniqueValidator, {
@@ -89,6 +95,20 @@ UserSchema.methods = {
       _id: this._id,
       userName: this.userName,
     };
+  },
+
+  _favorites: {
+    async posts(postId) {
+      if (this.favorites.posts.indexOf(postId) >= 0) {
+        this.favorites.posts.remove(postId);
+        await Post.decFavoriteCount(postId);
+      } else {
+        this.favorites.posts.push(postId);
+        await Post.incFavoriteCount(postId);
+      }
+
+      return this.save();
+    },
   },
 };
 
