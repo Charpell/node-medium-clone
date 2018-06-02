@@ -31,3 +31,9 @@
 - add passport-jwt and create the strategy
 - add jsonswebtoken library
 - how can i send less info to the front end ? Like i don't want to send the password
+
+
+### Part 6, Creation of a Post
+- create the post model
+- add the user id as the author
+- resolve error with joi
