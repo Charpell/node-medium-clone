@@ -18,7 +18,8 @@ This rest api gonna be for a Medium like website. This is a simple blog place wh
 
 
 ### Starting the Project
-run `npm run dev:build`
+run `npm run dev:build`  
+
 run `npm run dev`
 
 
