@@ -50,3 +50,9 @@
 - talk about the repos
 - create the controller
 - create a list statics method on post
+
+
+### Part 9, Update a post if author of it
+- create the route and controller
+- create a validation field
+
