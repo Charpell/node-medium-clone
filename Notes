@@ -24,3 +24,10 @@
 - crypt the user password
 - create the localStrategy with passport
 - can log a user
+
+
+### Part 5, Add passport-jwt and send less information about the user
+- create a secret password for the jwt
+- add passport-jwt and create the strategy
+- add jsonswebtoken library
+- how can i send less info to the front end ? Like i don't want to send the password
